@@ -1,0 +1,122 @@
+$bg: rgb(16, 16, 16);
+
+.banner {
+  height: 400px;
+  background-color: $bg;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+  box-sizing: border-box;
+ 
+
+  &::after{
+    content: none;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    background: $bg;
+    opacity: 0.4;
+
+  }
+
+  h1,p{
+    color: white;
+    font-size: 3rem;
+    width: 40%;
+    z-index: 10;
+  }
+p{
+  font-size: 1rem;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  font-weight: 100;
+
+}
+
+>div{
+  display: flex;
+
+  button{
+    padding: 1rem;
+    width: 150px;
+    background-color: white;
+    outline: none;
+    border: none;
+    z-index: 10;
+    border-radius: 40px;
+    background-color: rgb(200, 189, 189);
+    
+    font-size: 1.2rem;
+    margin: 0 1rem 0 0 ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &:hover{
+      opacity: 0.6;
+    }
+
+
+
+
+    &:nth-child(odd){
+      background-color: white;
+      color: black;
+    }
+    &:nth-child(even){
+      background-color: rgb(88, 88, 88);
+      color:white;
+    }
+
+    svg{
+      font-size: 1.5rem;
+      // margin: 0 5px;
+
+    }
+  }
+  
+}
+
+
+}
+
+.row {
+    background-color: $bg;
+    padding: 1rem;
+>h2{
+    margin: 0.3rem;
+    font-weight: 400;
+}
+
+  > div {
+    display: flex;
+    overflow-x: auto;
+
+    
+  }
+
+
+
+
+}
+
+.card {
+  width: 200px;
+  margin: 0.3rem;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    transform: translateY(-10px) ;
+  }
+}
