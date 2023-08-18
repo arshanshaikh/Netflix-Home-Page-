@@ -17,7 +17,7 @@ const topRated = "top_rated";
 
 const Card = ({ img }) => <img className="card" src={img} alt="cover" />;
 
-const Row = ({ title, arr = [,] }) => (
+const Row = ({ title, arr = [] }) => (
   <div className="row">
     <h2>{title}</h2>
 
