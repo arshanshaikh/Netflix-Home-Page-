@@ -71,7 +71,7 @@ const Home = () => {
     fetchnowPlaying();
     fetchpopular();
     fetchtopRated();
-    fetch;
+    
   }, []);
 
   return (
